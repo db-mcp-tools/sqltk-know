@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""dbt-know 回归测试：阈值 / 指标字典 / 故障指纹
+"""sqltk-know 回归测试：阈值 / 指标字典 / 故障指纹
 
 不依赖 pytest / 真实数据库。直接运行：
 

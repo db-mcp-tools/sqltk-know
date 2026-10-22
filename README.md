@@ -1,8 +1,17 @@
-# dbt-know
+# sqltk-know
 
 **数据库引擎知识层** · Library（不是 MCP）
 
 > 零历史、零数据库、零第三方依赖 —— 客户还没给任何数据时，判断能力的来源。
+
+> 发行名 `sqltk-know`，import 包名 `dbknow`（`pip install sqltk-know` → `import dbknow`）—— 两者不同是刻意的，原因见顶层 README「命名」。
+
+## 安装
+
+```bash
+pip install sqltk-know                        # 从 PyPI
+pip install ./sqltk-know                      # 从源码（在工具链根目录执行）
+```
 
 ## 三块知识
 
@@ -21,7 +30,7 @@
 ## 知识的来源与更新
 
 阈值来自官方文档与公开最佳实践，`ref` 字段写明依据。客户现场标定出的更精确阈值，
-应该回写到 `dbt-store` 的实例基线里（每个客户自己的 p95），而不是改这里 ——
+应该回写到 `sqltk-store` 的实例基线里（每个客户自己的 p95），而不是改这里 ——
 **通用知识与个案数据必须分开**，否则一次客户调优会污染所有客户。
 
 ## 开发
@@ -29,3 +38,7 @@
 ```bash
 python tests/test_dbknow.py
 ```
+
+## 许可
+
+MIT © 2026 罗文星 —— 见 [LICENSE](LICENSE)。
